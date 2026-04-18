@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Do you love me? 😏</h2>
+
+<button onclick="alert('I knew it 😎')" style="left:45%">Yes</button>
+<button id="noBtn" style="left:55%">No</button>
+
+<script>
+  const noBtn = document.getElementById("noBtn");
+
+  noBtn.addEventListener("mouseover", () => {
+    noBtn.style.top = Math.random() * 300 + "px";
+    noBtn.style.left = Math.random() * 300 + "px";
+  });
+</script>
+
+</body>
+</html>
